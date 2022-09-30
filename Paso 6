@@ -1,0 +1,12 @@
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s3:
+      dhcp4: false
+      addresses: [192.168.4.10/24]
+      gateway4: 192.168.4.100
+      nameservers:
+        search: [saulcm.edu]
+        addresses: [192.168.4.200]

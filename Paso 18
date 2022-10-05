@@ -8,9 +8,6 @@ network:
       addresses:
         - 192.168.4.10/24
         - 192.168.50.10/24
-      nameservers:
-        search: [saulcm.edu]
-        addresses: [192.168.4.200]
       routes:
         - to: 192.168.4.0/24
           via: 192.168.4.1
@@ -18,3 +15,6 @@ network:
         - to: 192.168.50.0/24
           via: 192.168.50.1
           metric: 100
+      nameservers:
+        search: [saulcm.edu]
+        addresses: [192.168.4.200]

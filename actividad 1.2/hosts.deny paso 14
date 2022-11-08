@@ -32,4 +32,4 @@
 
 
 
-#sshd: ALL : spawn echo "Acceso denegado a %u@%h a %d mediante la direccion %a" >> /var/log/net.log
+sshd: ALL : spawn echo "Acceso denegado a %u@%h a %d mediante la direccion %a" >> /var/log/net.log
